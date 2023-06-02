@@ -1,5 +1,5 @@
 
-# baseprjcts-typescript-webpart
+# baseprjcts-typescript-webpart ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 Base template for typescript & webpart project
 
@@ -17,4 +17,11 @@ This is a base template for typescript & webpart project. It is a simple webpart
 - [ts-node](https://www.npmjs.com/package/ts-node)
 - [@types/node](https://www.npmjs.com/package/@types/node)
 - [@types/webpack](https://www.npmjs.com/package/@types/webpack)
+
+
+
+
+
+
+
 
