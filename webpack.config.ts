@@ -1,5 +1,6 @@
 import * as path from 'path';
 import * as webpack from 'webpack';
+import WebpackShellPluginNext from 'webpack-shell-plugin-next';
 
 export default ( argv: { [key: string]: string }) => { 
 
@@ -21,6 +22,20 @@ const config: webpack.Configuration = {
             exclude: /node_modules/,
         }]
     },
+    plugins: [
+        new WebpackShellPluginNext({
+            onBuildStart:{
+                scripts: ['echo "your project is building..."'],
+                blocking: true,
+                parallel: false
+            }, 
+            onBuildEnd:{
+                scripts: ['echo "your project is built"'],
+                blocking: false,
+                parallel: true
+            }
+            })
+      ]
 };
 
 return config;
