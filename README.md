@@ -1,5 +1,9 @@
 
-# baseprjcts-typescript-webpart ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+# baseprjcts-typescript-webpart 
+
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+
 
 Base template for typescript & webpart project
 
