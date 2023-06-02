@@ -19,6 +19,7 @@
   "dependencies": {},
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch"
+    "start": "webpack --watch",
+    "prod": "webpack --mode production"
   }
 }

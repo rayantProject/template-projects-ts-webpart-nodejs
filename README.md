@@ -22,15 +22,24 @@ This is a base template for typescript & webpart project. It is a simple webpart
     git clone https://github.com/rayantProject/template-projects-ts-webpart-nodejs.git
     # to install dependencies
     npm install # or yarn install
-    # to build 
-    npm run build # or yarn build
+    # to build on watch
+    npm run start # or yarn build
 ```
 
 
 ## scripts
 
-- for build on time `npm run build` or `yarn build`
-- for build on watch `npm run watch` or `yarn watch`
+- for build on time dev mode `npm run build` or `yarn build`
+- for build on watch `npm run start` or `yarn start`
+- for build on production `npm run prod` or `yarn prod`
+
+## watch 
+is a webpack feature that allows you to keep track of changes in your files and automatically build your project when changes are detected.
+
+```
+    # to build on watch
+    npm run start # or yarn watch
+```
 
 
 ## dependencies
