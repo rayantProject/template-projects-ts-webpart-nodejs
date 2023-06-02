@@ -16,21 +16,21 @@ This is a base template for typescript & webpart project. It is a simple webpart
 
 
 ## get started
+   
+```
+    # clone the repo
+    git clone https://github.com/rayantProject/template-projects-ts-webpart-nodejs.git
+    # to install dependencies
+    npm install # or yarn install
+    # to build 
+    npm run build # or yarn build
+```
 
-1. Clone this repository
-2. In the command line run `npm install` or `yarn`
-3. In the command line run `npm run build` or `yarn build`
 
-                            or
+## scripts
 
-3. In the command line run `npm run watch` or `yarn watch`
-
-
-## build
-- In the command line run `npm run build` or `yarn build`
-
-## watch
-- In the command line run `npm run watch` or `yarn watch`
+- for build on time `npm run build` or `yarn build`
+- for build on watch `npm run watch` or `yarn watch`
 
 
 ## dependencies
