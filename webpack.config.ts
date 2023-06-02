@@ -25,17 +25,23 @@ const config: webpack.Configuration = {
     plugins: [
         new WebpackShellPluginNext({
             onBuildStart:{
-                scripts: ['echo "your project is building..."'],
+                scripts: ['echo "your project is building..."',
+                "rimraf build",
+                "rimraf dist"
+            ],
                 blocking: true,
-                parallel: false
+                parallel: false,
+            
             }, 
             onBuildEnd:{
-                scripts: ['echo "your project is built"'],
+                scripts: ['echo "your project is built"',
+                "node ./build/index.js"
+            ],
                 blocking: false,
                 parallel: true
             }
             })
-      ]
+        ]
 };
 
 return config;
