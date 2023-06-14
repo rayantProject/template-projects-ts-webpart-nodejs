@@ -26,6 +26,7 @@ This is a base template for typescript & webpart project. It is a simple webpart
 -   for build on time dev mode `npm run build` or `yarn build`
 -   for build on watch `npm run start` or `yarn start`
 -   for build on production `npm run prod` or `yarn prod`
+-   for lint `npm run lint` or `yarn lint`
 
 ## watch
 

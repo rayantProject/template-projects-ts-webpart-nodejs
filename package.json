@@ -11,6 +11,7 @@
         "@typescript-eslint/eslint-plugin": "^5.59.9",
         "@typescript-eslint/parser": "^5.59.9",
         "eslint": "^8.42.0",
+        "eslint-plugin-import": "^2.27.5",
         "prettier": "2.8.8",
         "rimraf": "^5.0.1",
         "ts-loader": "^9.4.3",
@@ -25,7 +26,8 @@
         "build": "webpack",
         "start": "webpack --watch",
         "prod": "webpack --mode production",
-        "lint": "eslint ."
+        "lint": "eslint .",
+        "prettier": "prettier --write ."
     },
     "description": "A sample webpart using typescript with eslint and prettier"
 }
