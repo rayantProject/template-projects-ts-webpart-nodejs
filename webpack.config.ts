@@ -1,10 +1,12 @@
 import * as path from "path";
 import * as webpack from "webpack";
+import nodeExternals from "webpack-node-externals";
 import WebpackShellPluginNext from "webpack-shell-plugin-next";
 
 export default (argv: { [key: string]: string }) => {
     const config: webpack.Configuration = {
         target: "node",
+        externals: [nodeExternals()],
         mode: argv.mode === "production" ? "production" : "development",
         entry: "./src/main.ts",
         optimization: {
@@ -19,12 +21,16 @@ export default (argv: { [key: string]: string }) => {
         },
         resolve: {
             extensions: [".ts", ".js"],
+            alias: {
+                src: path.resolve(__dirname, "src"),
+            },
         },
         module: {
             rules: [
                 {
-                    use: "ts-loader",
+                    loader: "ts-loader",
                     exclude: /node_modules/,
+                    test: /\.ts$/,
                 },
             ],
         },
