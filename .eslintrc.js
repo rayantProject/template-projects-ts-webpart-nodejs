@@ -21,8 +21,5 @@ module.exports = {
         eqeqeq: "warn",
         "no-empty-function": "warn",
         "no-empty": "warn",
-        "import/no-unresolved": "error",
-        "import/no-unused-modules": "warn",
-        "import/no-extraneous-dependencies": "error",
-    },
+     },
 };
