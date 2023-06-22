@@ -24,11 +24,14 @@
         "webpack-node-externals": "^3.0.0",
         "webpack-shell-plugin-next": "^2.3.1"
     },
-    "dependencies": {},
+    "dependencies": {
+        "puppeteer": "^20.7.3",
+        "puppeteer-core": "^20.7.3"
+    },
     "scripts": {
         "build": "webpack",
-        "start": "webpack --watch",
-        "prod": "webpack --mode production",
+        "start": "webpack --watch --env mode=development --config webpack.config.ts",
+        "prod": "webpack --mode production --config webpack.config.ts",
         "lint": "eslint .",
         "prettier": "prettier --write ."
     },
