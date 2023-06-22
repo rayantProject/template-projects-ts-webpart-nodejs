@@ -48,7 +48,7 @@ export default (argv: { [key: string]: string }) => {
                 onBuildEnd: {
                     scripts: [
                         'echo "your project is built"',
-                        "node ./build/index.js",
+                        "nodemon ./build/index.js --watch ./build",
                     ],
                     blocking: false,
                     parallel: true,
