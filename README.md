@@ -50,3 +50,7 @@ is a webpack feature that allows you to keep track of changes in your files and 
 -   [@types/webpack-env](https://www.npmjs.com/package/@types/webpack-env)
 -   [prettier](https://prettier.io/)
 -   [eslint](https://eslint.org/)
+
+## remarks
+
+-   If you can use dotenv without install package `dotenv`.

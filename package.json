@@ -6,11 +6,13 @@
     "license": "MIT",
     "repository": "https://github.com/rayantProject/scrapbotrt.git",
     "devDependencies": {
+        "@types/dotenv-webpack": "^7.0.4",
         "@types/node": "^20.2.5",
         "@types/webpack": "^5.28.1",
         "@types/webpack-node-externals": "^3.0.0",
         "@typescript-eslint/eslint-plugin": "^5.59.11",
         "@typescript-eslint/parser": "^5.59.11",
+        "dotenv-webpack": "^8.0.1",
         "eslint": "^8.42.0",
         "eslint-plugin-import": "^2.27.5",
         "nodemon": "^2.0.22",
