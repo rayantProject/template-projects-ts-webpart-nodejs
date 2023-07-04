@@ -26,10 +26,7 @@
         "webpack-node-externals": "^3.0.0",
         "webpack-shell-plugin-next": "^2.3.1"
     },
-    "dependencies": {
-        "puppeteer": "^20.7.3",
-        "puppeteer-core": "^20.7.3"
-    },
+    "dependencies": {},
     "scripts": {
         "build": "webpack",
         "start": "webpack --watch --env mode=development --config webpack.config.ts",
